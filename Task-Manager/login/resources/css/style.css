@@ -1,0 +1,123 @@
+:root {
+	 --body-bg-color: #e4e6f5;
+	 --border-color: #e5e4e9;
+	 --theme-bg-color: #fff;
+	 --body-color: #1b1f31;
+	 --main-color: #7a7e9d;
+	 --main-light-color: #a1a4b9;
+	 --title-color: #979dc3;
+	 --body-font: "Jost", sans-serif;
+	 --button-bg-color: #eaeefc;
+	 --button-color: #4d76fd;
+	 --unselected-mail: #f1f2f7;
+	 --calendar-border-color: #cbcfe0;
+	 --main-container-bg: #f0f0f7;
+}
+ * {
+	 outline: none;
+	 box-sizing: border-box;
+}
+ html {
+	 box-sizing: border-box;
+	 -webkit-font-smoothing: antialiased;
+}
+ body {
+	 font-family: var(--body-font);
+	 background-color: var(--theme-bg-color);
+	 color: var(--body-color);
+	 font-size: 15px;
+}
+
+.container {
+	position: absolute;
+	display: inline-block;
+	background-color: var(--body-bg-color);
+	top: 100px;
+	padding: 0;
+	width: 270px;
+	height: auto;
+	margin-left: 500px;
+	border-radius: 10px;
+	box-shadow: 1px 2px 1px var(--main-color);
+}
+
+.container p {
+	margin: 0;
+}
+
+.header {
+	font-size: 30px;
+	color: var(--body-bg-color);
+	font-weight: 700;
+	text-align: center;
+	height: 70px;
+	letter-spacing: 0.7px;
+	line-height: 70px;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	text-transform: uppercase;
+	background-color: #c14eee;
+	border-radius: 10px;
+}
+
+.form{
+	color: #a10add;
+	font-weight: 500;
+	margin: 20px 10px;
+}
+
+#username {
+	border-radius: 7px;
+	padding: 4px;
+}
+
+.password-class {
+	margin-top: 13px;
+}
+
+#password {
+	border-radius: 7px;
+	padding: 4px;
+}
+
+#toggle-password {
+	cursor: pointer;
+}
+
+#password-input[type="password"] {
+	padding-right: 25px;
+}
+
+#password-input[type="password"] + #toggle-password::before {
+	content: "👁️";
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#password-input[type="text"] + #toggle-password::before {
+	content: "🙈";
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn {
+	margin: 10px 0 30px 30%;
+}
+
+.container button {
+	background-color: #a10add;
+    color: var(--body-bg-color);
+	font-size: 17px;
+	font-weight: 500;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}

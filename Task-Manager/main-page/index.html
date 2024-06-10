@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <link rel="stylesheet" type="text/css" href="vendors/css/necolas.github.io_normalize.css_8.0.1_normalize.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+
+  <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="user-profile-area">
+      
+      <div class="calendar">
+        <div class="calendar-container">
+            <header class="calendar-header">
+                <p class="calendar-current-date"></p>
+                <div class="calendar-navigation">
+                    <span id="calendar-prev"
+                          class="material-symbols-rounded">
+                        chevron_left
+                    </span>
+                    <span id="calendar-next"
+                          class="material-symbols-rounded">
+                        chevron_right
+                    </span>
+                </div>
+            </header>
+     
+            <div class="calendar-body">
+              <ul class="calendar-weekdays">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+              </ul>
+              <ul class="calendar-dates"></ul>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main-area">
+
+      <div class="main-container">
+
+        <div class="inbox-container">
+
+          <div class="inbox">
+
+            <div class="task-container">
+              <h1>Task Manager</h1>
+              <form id="task-form">
+                <input type="text" id="task-input" placeholder="Enter task">
+                <button type="submit" onclick="addItem()"> Add Task </button>
+              </form>
+              <ul id="task-list"></ul>
+            </div>
+            
+          </div>
+          
+        </div>
+
+        <div class="mail-detail">
+        
+          <div class="members">
+            <h1>USERS</h1>
+            <ul>
+                <li><img src="resources/img/Michael.png" id="Mike" alt="User-1"></li>
+                <li><img src="resources/img/Ife.png" alt="User-2"></li>
+                <li><img src="resources/img/Ismail.png" alt="User-3"></li>
+                <li><img src="resources/img/Lateefah.png" alt="User-4"></li>
+                <li><img src="resources/img/Mariam.png" id="Mariam" alt="User-5"></li>
+            </ul>
+        
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="resources/js/jquery-3.7.1.js"></script>
+  <script src="resources/js/script.js"></script>
+</body>
+</html>
+
+
